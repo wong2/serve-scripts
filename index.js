@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 var path = require('path')
 var merge = require('merge')
 var createServer = require('./server').createServer
