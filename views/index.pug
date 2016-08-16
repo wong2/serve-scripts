@@ -1,0 +1,30 @@
+html
+  head
+    title= title
+    link(href='/static/libs/semantic/dist/semantic.min.css', rel='stylesheet')
+    link(href='/static/app.css', rel='stylesheet')
+  body
+    .ui.container.main
+      h2.ui.header
+        i.icon.rocket
+        .content= title
+      .commands
+        .ui.label
+          h5.ui.header
+            .content
+            | Commands
+        .command-buttons
+          each command in commands
+            button.ui.primary.basic.button.small= command
+      .output
+        .ui.label
+          h5.ui.header
+            .content
+              | Output
+              i.icon.circle.tiny.grey
+        .ui.stacked.segment.inverted
+          pre#output
+    script(src='/static/libs/jquery/dist/jquery.min.js')
+    script(src='/static/libs/semantic/dist/semantic.min.js')
+    script(src='/static/libs/socket.io-client/socket.io.js')
+    script(src='/static/app.js')

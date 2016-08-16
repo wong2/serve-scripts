@@ -1,0 +1,37 @@
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.main {
+  margin-top: 40px;
+}
+
+.page-title {
+  margin-bottom: 30px;
+}
+
+.commands {
+  margin-top: 50px;
+}
+
+.commands .label {
+  margin-bottom: 20px;
+}
+
+.command-buttons button {
+  margin-right: 10px !important;
+}
+
+.output {
+  margin-top: 20px;
+}
+
+.output .label .icon {
+  margin-left: 0.3rem;
+  margin-right: 0 !important;
+}
+
+.output pre {
+  height: 400px;
+}

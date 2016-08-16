@@ -1,0 +1,13 @@
+{
+    "title": "My Server Scripts",
+    "auth": {
+        "username": "xxxx",
+        "password": "yyyy"
+    },
+    "commands": [
+        {
+            "name": "ls all files",
+            "command": "ls -al"
+        }
+    ]
+}
