@@ -30,6 +30,7 @@ module.exports.createServer = function(config) {
   var io = SocketIO(server)
 
   app.set('view engine', 'pug')
+  app.set('views', __dirname + '/views')
   app.use('/static', express.static(__dirname + '/static'))
 
   if (config.auth) {
