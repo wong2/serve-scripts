@@ -1,0 +1,3 @@
+!static/libs/jquery/dist
+!static/libs/semantic/dist
+!static/libs/socket.io-client/socket.io.js
