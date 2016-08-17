@@ -78,5 +78,5 @@ $('.command-buttons button').click(function() {
   isCommandRunning = true
   $('.command-buttons button').addClass('disabled')
   output.addLoading()
-  socket.emit('run cmd', $(this).text)
+  socket.emit('run cmd', $(this).text())
 })
