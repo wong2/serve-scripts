@@ -49,7 +49,7 @@ module.exports.createServer = function(config) {
   io.on('connection', function(socket) {
     socket.on('run cmd', function(commandName) {
       var command = config.commands.find(function(c) {
-        return c.name = commandName
+        return c.name == commandName
       })
       if (command) {
         runCommand(command.command, socket)
