@@ -17,7 +17,7 @@ function runCommand(command, socket) {
   })
   cmd.stderr.setEncoding('utf-8')
   cmd.stdout.on('data', function(data) {
-    socket.emit('cmd sterr', data)
+    socket.emit('cmd stderr', data)
   })
   cmd.on('exit', function(code) {
     debug('Command %s exited with code: %s', command, code)
