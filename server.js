@@ -1,6 +1,7 @@
 var express = require('express')
 var Server = require('http').Server
 var SocketIO = require('socket.io')
+var find = require('lodash.find')
 var exec = require('child_process').exec
 var utils = require('./utils')
 
@@ -48,7 +49,7 @@ module.exports.createServer = function(config) {
 
   io.on('connection', function(socket) {
     socket.on('run cmd', function(commandName) {
-      var command = config.commands.find(function(c) {
+      var command = find(config.commands, function(c) {
         return c.name == commandName
       })
       if (command) {

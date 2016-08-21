@@ -14,6 +14,7 @@
   "dependencies": {
     "basic-auth": "^1.0.4",
     "express": "^4.14.0",
+    "lodash.find": "^4.6.0",
     "merge": "^1.2.0",
     "pug": "^2.0.0-beta5",
     "socket.io": "^1.4.8"
